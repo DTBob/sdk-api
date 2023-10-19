@@ -57,7 +57,6 @@ api_name:
 
 The <b>mmioOpen</b> function opens a file for unbuffered or buffered I/O; creates a file; deletes a file; or checks whether a file exists. The file can be a standard file, a memory file, or an element of a custom storage system. The handle returned by <a href="/windows/desktop/Multimedia/opening-a-file-with-mmioopen">mmioOpen</a> is not a standard file handle; do not use it with any file I/O functions other than multimedia file I/O functions.
 
-<div class="alert"><b>Note</b>  This function is deprecated. Applications should call <a href="/windows/desktop/api/fileapi/nf-fileapi-createfilea">CreateFile</a> to create or open files.</div>
 <div> </div>
 
 ## -parameters
