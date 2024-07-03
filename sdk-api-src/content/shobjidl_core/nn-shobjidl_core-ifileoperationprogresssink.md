@@ -103,8 +103,7 @@ The following example passes <b>IFileOperationProgressSink</b> to an instance of
 
 ```
 IFileOperation *pfo;
-CoCreateInstance(CLSID_FileOperation, NULL, CLSCTX_ALL, IID_IFileOperation, (void **)&m_pFO)
-HRESULT hr = SHCreateFileOperation(hwnd, 0, IID_PPV_ARGS(&pfo));
+CoCreateInstance(CLSID_FileOperation, NULL, CLSCTX_ALL, IID_IFileOperation, (void **)&pfo)
 if (SUCCEEDED(hr))
 {
     // Advise to get notifications
